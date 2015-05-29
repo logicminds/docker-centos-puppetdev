@@ -11,3 +11,9 @@ docker run –rm -v ${PWD}:/opt –workdir /opt –hostname=puppetdev -t logicmi
 ```
 
 Overtime there will be many different tags for each puppet version so that we can easily test against different ruby/puppet combinations.
+
+## Building
+```shell
+bash ./build.sh
+```
+
