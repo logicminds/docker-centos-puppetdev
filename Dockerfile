@@ -6,6 +6,6 @@ COPY scripts/puppet-bootstrap/centos_7_x.sh /tmp/bootstrap/centos_7_x.sh
 RUN bash /tmp/bootstrap/centos_7_x.sh
 USER puppet
 COPY scripts/puppet-bootstrap/Gemfile /home/puppet/
-ENV PUPPET_VERSION="3.8.1"
+ENV PUPPET_VERSION="3.2.4"
 ENV PATH=/home/puppet/bin:$PATH
 RUN cd /home/puppet && bundle install
