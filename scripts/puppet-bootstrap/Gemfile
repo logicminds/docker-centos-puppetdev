@@ -12,5 +12,13 @@ gem "puppet-blacksmith"
 gem "guard-rake"
 gem "metadata-json-lint"
 gem 'puppet-syntax'
+gem 'guard'
+gem 'rb-inotify', :require => false
+gem 'rb-fsevent', :require => false
+gem 'rb-fchange', :require => false
+gem 'growl', :require => false
+gem 'libnotify', :require => false
+gem 'guard-rspec'
+gem 'guard-cucumber'
 #gem 'puppet-retrospec', '~> 0.7'
 
