@@ -7,7 +7,7 @@ Messing with gems, bundler and various ruby installations can be a PITA when dev
 The idea here is that you can now use containers to perform development.
 
 ```shell
-docker run –rm -v ${PWD}:/opt –workdir /opt –hostname=puppetdev -t logicminds/centos-puppetdev:latest3.8 rake spec
+docker run –rm -v ${PWD}:/module –workdir /module –hostname=puppetdev -t logicminds/centos-puppetdev:latest3.8 rake spec
 ```
 
 Overtime there will be many different tags for each puppet version so that we can easily test against different ruby/puppet combinations.
@@ -17,3 +17,5 @@ Overtime there will be many different tags for each puppet version so that we ca
 bash ./build.sh
 ```
 
+## More info
+http://logicminds.github.io/blog/2015/05/28/leveraging-docker-for-puppet-development/

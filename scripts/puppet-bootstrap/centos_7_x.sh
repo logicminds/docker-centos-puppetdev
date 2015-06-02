@@ -36,7 +36,6 @@ gpgcheck = 0" >/etc/yum.repos.d/centos7_optional.repo
 
 
 # Install Puppet...
-echo "Installing puppet"
-#yum install -y puppet > /dev/null
-
+mkdir -p /module
+chown -R puppet:puppet /module
 echo "Puppet installed!"
