@@ -18,4 +18,4 @@ bash ./build.sh
 ```
 
 ## More info
-http://logicminds.github.io/blog/2015/05/28/leveraging-docker-for-puppet-development/
+[Leveraging docker for puppet module development](http://bit.ly/1cv8N71)
