@@ -3,8 +3,9 @@
 # It has been tested on CentOS 6.4 64bit
 
 set -e
-yum install -y kernel-devel gcc-c++ kernel-headers make gcc wget git ruby-devel rubygems-devel hostname rubygem-bundler.noarch > /dev/null
+yum install -y kernel-devel gcc-c++ kernel-headers make gcc wget git ruby-devel rubygems-devel hostname rubygem-bundler.noarch tar gzip unzip > /dev/null
 yum install -y augeas-libs dmidecode ruby-augeas ruby-shadow hwdata libselinux-ruby libselinux-utils net-tools pciutils pciutils-libs virt-what
+yum -y group install 'Development tools'
 
 useradd puppet
 REPO_URL="http://yum.puppetlabs.com/el/7/products/x86_64/puppetlabs-release-7-11.noarch.rpm"

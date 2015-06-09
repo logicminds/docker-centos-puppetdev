@@ -16,6 +16,11 @@ Overtime there will be many different tags for each puppet version so that we ca
 ```shell
 bash ./build.sh
 ```
+## Interactive login
+docker run -ti logicminds/puppetdev:latest /bin/bash
+
+## Root access
+Root Password: Docker!
 
 ## More info
 [Leveraging docker for puppet module development](http://bit.ly/1cv8N71)
