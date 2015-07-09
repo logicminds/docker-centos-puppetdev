@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "rake"
-gem "puppet"
+gem "puppet", ENV['PUPPET_VERSION']
 gem "rspec-puppet", '~> 2.2.0'
 gem "puppetlabs_spec_helper"
 gem 'rspec-puppet-utils'
@@ -22,4 +22,3 @@ gem 'libnotify', :require => false
 gem 'guard-rspec'
 gem 'guard-cucumber'
 gem 'puppet-retrospec'
-
