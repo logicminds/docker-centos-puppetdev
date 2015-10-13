@@ -4,7 +4,7 @@
 
 set -e
 yum install -y kernel-devel gcc-c++ kernel-headers make gcc wget git ruby-devel rubygems-devel hostname rubygem-bundler.noarch tar gzip unzip > /dev/null
-yum install -y augeas-libs dmidecode ruby-augeas ruby-shadow hwdata libselinux-ruby libselinux-utils net-tools pciutils pciutils-libs virt-what
+yum install -y augeas-libs dmidecode ruby-augeas ruby-shadow hwdata libselinux-ruby libselinux-utils net-tools pciutils pciutils-libs virt-what zlib-devel
 yum -y group install 'Development tools'
 
 useradd puppet
