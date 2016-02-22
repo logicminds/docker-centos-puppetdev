@@ -43,5 +43,4 @@ echo "Puppet installed!"
 echo "Retrspec setup"
 gem install puppet-retrospec
 gem install facter
-export RETROSPEC_PUPPET_AUTO_GENERATE=true
-retrospec -m /tmp/new_module puppet new_module -n new_module
+su - puppet -c 'RETROSPEC_PUPPET_AUTO_GENERATE=true retrospec -m /tmp/new_module puppet new_module -n new_module'
